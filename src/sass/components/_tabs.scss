@@ -1,0 +1,35 @@
+.tabs{
+  position: relative;
+
+  &-nav-item{
+    cursor: pointer;
+  }
+
+  &-body{
+    border: 1px solid #dee2e6;
+    border-top: 0;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+
+    &.fill{
+      border: 0;
+    }
+  }
+
+  &-body-item{
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &.tabs--vertical{
+    display: flex;
+  }
+
+  &.tabs--vertical &-nav{
+    min-width: 150px;
+    margin-right: 2em;
+  }
+}

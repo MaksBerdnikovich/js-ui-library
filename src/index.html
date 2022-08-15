@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI Library</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="img/fav/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="page" class="page">
+    <!-- Dropdowns -->
+    <div class="container">
+        <div class="card border-info">
+            <div class="card-body p-0 pb-4 border-info">
+                <div class="card-title p-1 bg-info bg-gradient bg-opacity-25 border border-info rounded mb-4 text-center">
+                    <span class="text-white h4">Dropdowns</span>
+                </div>
+
+                <div class="row ps-4 pe-4">
+                    <div class="col">
+                        <div class="dropdown">
+                            <button id="dropdown-1" class="btn btn-secondary dropdown-toggle" type="button">
+                                <span>Dropdown button</span>
+                            </button>
+                            <ul class="dropdown-menu" data-toggle-id="dropdown-1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <div class="dropdown-btn-group btn-group">
+                                <button type="button" class="btn btn-secondary">Dropdown button</button>
+                                <button id="dropdown-2" type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                            </div>
+                            <ul class="dropdown-menu" data-toggle-id="dropdown-2">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="container">
+        <div class="card border-info">
+            <div class="card-body p-0 pb-4 border-info">
+                <div class="card-title p-1 bg-info bg-gradient bg-opacity-25 border border-info rounded mb-4 text-center">
+                    <span class="text-white h4">Modals</span>
+                </div>
+
+                <div class="row ps-4 pe-4">
+                    <div class="col">
+                        <button class="btn btn-secondary w-100" type="button" data-toggle="modal" data-target="#modal-1">
+                            Standard Modal
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-secondary w-100" type="button" data-toggle="modal" data-target="#modal-2">
+                            Fullscreen Modal
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button id="dynamicModal" class="btn btn-secondary w-100" type="button" data-toggle="modal" data-target="#modal-3">
+                            Dynamic Create Modal
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="container">
+        <div class="card border-info">
+            <div class="card-body p-0 pb-4 border-info">
+                <div class="card-title p-1 bg-info bg-gradient bg-opacity-25 border border-info rounded mb-4 text-center">
+                    <span class="text-white h4">Tabs</span>
+                </div>
+
+                <div class="row ps-4 pe-4">
+                    <div class="col">
+                        <div class="tabs" data-tabs>
+                            <div class="tabs-nav">
+                                <ul class="nav nav-tabs">
+                                    <li class="tabs-nav-item nav-link active">Active</li>
+                                    <li class="tabs-nav-item nav-link">Link</li>
+                                    <li class="tabs-nav-item nav-link">Link</li>
+                                </ul>
+                            </div>
+                            <div class="tabs-body p-4">
+                                <div class="tabs-body-item active">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at blanditiis
+                                        consequuntur debitis dolorem ea enim hic illum ipsam laborum magnam nam nihil non
+                                        nostrum reiciendis soluta, temporibus voluptas, voluptatum?
+                                    </div>
+                                    <div>Ad architecto cum debitis, doloribus eos incidunt nobis pariatur similique!
+                                        Accusantium autem beatae cumque delectus ducimus et eum expedita fugiat incidunt
+                                        nobis obcaecati odit quia quod sed tempore vel, veritatis!
+                                    </div>
+                                </div>
+                                <div class="tabs-body-item">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at blanditiis
+                                        consequuntur debitis dolorem ea enim hic illum ipsam laborum magnam nam nihil non
+                                        nostrum reiciendis soluta, temporibus voluptas, voluptatum?
+                                    </div>
+                                </div>
+                                <div class="tabs-body-item">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at blanditiis
+                                        consequuntur debitis dolorem ea enim hic illum ipsam laborum magnam nam nihil non
+                                        nostrum reiciendis soluta, temporibus voluptas, voluptatum?
+                                    </div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at blanditiis
+                                        consequuntur debitis dolorem ea enim hic illum ipsam laborum magnam nam nihil non
+                                        nostrum reiciendis soluta, temporibus voluptas, voluptatum?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ps-4 pe-4 mt-5">
+                    <div class="col">
+                        <div class="tabs tabs--vertical" data-tabs>
+                            <div class="tabs-nav">
+                                <ul class="nav nav-pills nav-fill flex-column">
+                                    <li class="tabs-nav-item nav-link active">Active</li>
+                                    <li class="tabs-nav-item nav-link">Link</li>
+                                    <li class="tabs-nav-item nav-link">Link</li>
+                                </ul>
+                            </div>
+                            <div class="tabs-body fill">
+                                <div class="tabs-body-item active">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at blanditiis
+                                        consequuntur debitis dolorem ea enim hic illum ipsam laborum magnam nam nihil non
+                                        nostrum reiciendis soluta, temporibus voluptas, voluptatum?
+                                    </div>
+                                    <div>Ad architecto cum debitis, doloribus eos incidunt nobis pariatur similique!
+                                        Accusantium autem beatae cumque delectus ducimus et eum expedita fugiat incidunt
+                                        nobis obcaecati odit quia quod sed tempore vel, veritatis!
+                                    </div>
+                                </div>
+                                <div class="tabs-body-item">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at blanditiis
+                                        consequuntur debitis dolorem ea enim hic illum ipsam laborum magnam nam nihil non
+                                        nostrum reiciendis soluta, temporibus voluptas, voluptatum?
+                                    </div>
+                                </div>
+                                <div class="tabs-body-item">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at blanditiis
+                                        consequuntur debitis dolorem ea enim hic illum ipsam laborum magnam nam nihil non
+                                        nostrum reiciendis soluta, temporibus voluptas, voluptatum?
+                                    </div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at blanditiis
+                                        consequuntur debitis dolorem ea enim hic illum ipsam laborum magnam nam nihil non
+                                        nostrum reiciendis soluta, temporibus voluptas, voluptatum?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordions -->
+    <div class="container">
+        <div class="card border-info">
+            <div class="card-body p-0 pb-4 border-info">
+                <div class="card-title p-1 bg-info bg-gradient bg-opacity-25 border border-info rounded mb-4 text-center">
+                    <span class="text-white h4">Accordions</span>
+                </div>
+
+                <div class="row ps-4 pe-4">
+                    <div class="col">
+                        <div class="accordion" data-accordion="flush">
+                            <div class="accordion-item active">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button">Accordion Item</button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <div class="accordion-body">
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, iste, ut.
+                                            Accusamus adipisci aliquid amet assumenda consequatur corporis dicta fugit
+                                            labore magni nemo odit omnis quaerat sequi, totam unde voluptate!
+                                        </div>
+                                        <div>Animi, aperiam at et fugit minus modi neque numquam quia? Ab aliquid amet
+                                            autem blanditiis culpa delectus deserunt fuga minus modi quae, quod repellat
+                                            repudiandae vel veritatis voluptatem. Odio, similique.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button">Accordion Item</button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <div class="accordion-body">
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, iste, ut.
+                                            Accusamus adipisci aliquid amet assumenda consequatur corporis dicta fugit
+                                            labore magni nemo odit omnis quaerat sequi, totam unde voluptate!
+                                        </div>
+                                        <div>Animi, aperiam at et fugit minus modi neque numquam quia? Ab aliquid amet
+                                            autem blanditiis culpa delectus deserunt fuga minus modi quae, quod repellat
+                                            repudiandae vel veritatis voluptatem. Odio, similique.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button">Accordion Item</button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <div class="accordion-body">
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, iste, ut.
+                                            Accusamus adipisci aliquid amet assumenda consequatur corporis dicta fugit
+                                            labore magni nemo odit omnis quaerat sequi, totam unde voluptate!
+                                        </div>
+                                        <div>Animi, aperiam at et fugit minus modi neque numquam quia? Ab aliquid amet
+                                            autem blanditiis culpa delectus deserunt fuga minus modi quae, quod repellat
+                                            repudiandae vel veritatis voluptatem. Odio, similique.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ps-4 pe-4 mt-5">
+                    <div class="col">
+                        <div class="accordion" data-accordion="open">
+                            <div class="accordion-item active">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button">Accordion Item</button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <div class="accordion-body">
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, iste, ut.
+                                            Accusamus adipisci aliquid amet assumenda consequatur corporis dicta fugit
+                                            labore magni nemo odit omnis quaerat sequi, totam unde voluptate!
+                                        </div>
+                                        <div>Animi, aperiam at et fugit minus modi neque numquam quia? Ab aliquid amet
+                                            autem blanditiis culpa delectus deserunt fuga minus modi quae, quod repellat
+                                            repudiandae vel veritatis voluptatem. Odio, similique.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button">Accordion Item</button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <div class="accordion-body">
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, iste, ut.
+                                            Accusamus adipisci aliquid amet assumenda consequatur corporis dicta fugit
+                                            labore magni nemo odit omnis quaerat sequi, totam unde voluptate!
+                                        </div>
+                                        <div>Animi, aperiam at et fugit minus modi neque numquam quia? Ab aliquid amet
+                                            autem blanditiis culpa delectus deserunt fuga minus modi quae, quod repellat
+                                            repudiandae vel veritatis voluptatem. Odio, similique.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button">Accordion Item</button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <div class="accordion-body">
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, iste, ut.
+                                            Accusamus adipisci aliquid amet assumenda consequatur corporis dicta fugit
+                                            labore magni nemo odit omnis quaerat sequi, totam unde voluptate!
+                                        </div>
+                                        <div>Animi, aperiam at et fugit minus modi neque numquam quia? Ab aliquid amet
+                                            autem blanditiis culpa delectus deserunt fuga minus modi quae, quod repellat
+                                            repudiandae vel veritatis voluptatem. Odio, similique.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container">
+        <div class="card border-info">
+            <div class="card-body p-0 pb-4 border-info">
+                <div class="card-title p-1 bg-info bg-gradient bg-opacity-25 border border-info rounded mb-4 text-center">
+                    <span class="text-white h4">Carousel</span>
+                </div>
+
+                <div class="row ps-4 pe-4">
+                    <div class="col">
+                        <div class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="100%" height="400">
+                                        <rect width="100%" height="100%" fill="#777"></rect>
+                                    </svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="100%" height="400">
+                                        <rect width="100%" height="100%" fill="#666"></rect>
+                                    </svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="100%" height="400">
+                                        <rect width="100%" height="100%" fill="#555"></rect>
+                                    </svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-navigation">
+                                <button class="carousel-control-prev" type="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-slide-to="1" class="active"></button>
+                                <button type="button" data-slide-to="2"></button>
+                                <button type="button" data-slide-to="3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container">
+        <div class="card border-info">
+            <div class="card-body p-0 pb-4 border-info">
+                <div class="card-title p-1 bg-info bg-gradient bg-opacity-25 border border-info rounded mb-4 text-center">
+                    <span class="text-white h4">Cards</span>
+                </div>
+
+                <div class="row ps-4 pe-4 mb-3">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="filter" data-cards-filter>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-primary active" data-cards-filter-item="*">All</a>
+                                <a href="#" class="btn btn-primary" data-cards-filter-item=".true">True</a>
+                                <a href="#" class="btn btn-primary" data-cards-filter-item=".false">False</a>
+                            </div>
+                        </div>
+
+                        <div class="sorting" data-cards-sorting>
+                            <div class="dropdown dropdown--invert">
+                                <button id="sorting" class="btn btn-secondary dropdown-toggle" type="button">
+                                    <span>Sorting</span>
+                                </button>
+                                <ul class="dropdown-menu" data-toggle-id="sorting">
+                                    <li><a class="dropdown-item" href="#" data-cards-sorting-item="asc">ASC</a></li>
+                                    <li><a class="dropdown-item" href="#" data-cards-sorting-item="desc">DESC</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ps-4 pe-4 mb-5" data-cards></div>
+
+                <div class="row ps-4 pe-4">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-warning btn-lg w-auto" data-cards-loadmore>Load More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Off Canvas -->
+    <div class="position-fixed top-50 end-0">
+        <button class="btn btn-dark btn-sm" type="button" data-offcanvas="#styleChanger">Style <br/>Changer</button>
+    </div>
+</div>
+
+<!-- Style Changer -->
+<div id="styleChanger" class="offcanvas offcanvas-start" data-style-changer>
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Style Changer</h5>
+        <button type="button" class="btn-close" data-offcanvas-close></button>
+    </div>
+    <div class="offcanvas-body small">
+        <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">Container</li>
+            <li class="list-group-item">
+                <input type="radio" class="btn-check" name="container" id="containerLg" data-value="1200">
+                <label class="btn btn-outline-secondary btn-sm" for="containerLg">Large</label>
+
+                <input type="radio" class="btn-check" name="container" id="containerMd" data-value="992">
+                <label class="btn btn-outline-secondary btn-sm" for="containerMd">Medium</label>
+
+                <input type="radio" class="btn-check" name="container" id="containerSm" data-value="768">
+                <label class="btn btn-outline-secondary btn-sm" for="containerSm">Small</label>
+            </li>
+            <li class="list-group-item active">Font Size</li>
+            <li class="list-group-item">
+                <input type="radio" class="btn-check" name="size" id="sizeLg" data-value="1.2">
+                <label class="btn btn-outline-secondary btn-sm" for="sizeLg">Large</label>
+
+                <input type="radio" class="btn-check" name="size" id="sizeNm" data-value="1">
+                <label class="btn btn-outline-secondary btn-sm" for="sizeNm">Normal</label>
+
+                <input type="radio" class="btn-check" name="size" id="sizeSm" data-value="0.8">
+                <label class="btn btn-outline-secondary btn-sm" for="sizeSm">Small</label>
+            </li>
+            <li class="list-group-item active">Background</li>
+            <li class="list-group-item">
+                <input type="color" class="form-control form-control-lg" name="background">
+            </li>
+        </ul>
+
+        <div class="mt-3 text-end">
+            <button type="button" class="btn btn-danger" data-style-changer-reset>Reset</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 1 -->
+<div id="modal-1" class="modal" data-modal>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-modal-close></button>
+            </div>
+            <div class="modal-body">
+                <p>Woo-hoo, <wtf>you're</wtf> reading this text in a modal!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-modal-close>Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal-2" class="modal" data-modal>
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-modal-close></button>
+            </div>
+            <div class="modal-body">
+                <p>Woo-hoo, <wtf>you're</wtf> reading this text in a modal!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-modal-close>Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src='script.js'></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.accordion{
+
+  &-item:not(.active) &-header button{
+    color: #212529;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &-item:not(.active) &-header button:after{
+    transform: rotate(0);
+  }
+
+  &-item &-collapse{
+    height: 0;
+    overflow: hidden;
+  }
+
+  &-item.active &-collapse{
+    height: auto;
+    transition: height 0.3s ease;
+  }
+}
